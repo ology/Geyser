@@ -30,7 +30,8 @@ shinyUI(
             ),
 
             mainPanel(
-                plotOutput('xyPlot')
+                plotOutput('eruption_plot'),
+                plotOutput('succession_plot')
             )
         )
     )
