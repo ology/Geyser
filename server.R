@@ -11,7 +11,7 @@ shinyServer(
                 x, y,
                 xlab = 'Previous Duration',
                 ylab = 'Next Duration',
-                main = 'Succession Pairs',
+                main = 'Succession Plot',
                 type = input$graph_type
             )
 
