@@ -3,8 +3,9 @@ library(shiny)
 shinyServer(
     function(input, output) {
         output$xyPlot <- renderPlot({
-            x <- faithful$eruptions[ 1 : length(faithful$eruptions) - 1 ]
-            y <- faithful$eruptions[ 2 : length(faithful$eruptions) ]
+            z <- sample( faithful$eruptions, input$sample_size )
+            x <- z[ 1 : length(z) - 1 ]
+            y <- z[ 2 : length(z) ]
             plot( x, y, xlab="Previous Duration", ylab="Next Duration", main="Eruption Pairs", type=input$type )
 
             if ( input$arrow_toggle ) {
