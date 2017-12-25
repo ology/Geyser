@@ -6,6 +6,7 @@ shinyServer(
             z <- sample( faithful$eruptions, input$sample_size )
             x <- z[ 1 : length(z) - 1 ]
             y <- z[ 2 : length(z) ]
+
             plot( x, y, xlab="Previous Duration", ylab="Next Duration", main="Eruption Pairs", type=input$type )
 
             if ( input$arrow_toggle ) {
