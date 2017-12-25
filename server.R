@@ -12,7 +12,7 @@ shinyServer(
                 xlab = 'Previous Duration',
                 ylab = 'Next Duration',
                 main = 'Eruption Timing Pairs',
-                type=input$type
+                type = input$graph_type
             )
 
             if ( input$arrow_toggle ) {
