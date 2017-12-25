@@ -22,7 +22,8 @@ shinyServer(
                     x[s + 1], y[s + 1],
                     length = 0.1,
                     angle = 20,
-                    col = 'black')
+                    col = 'black'
+                )
             }
         })
     }
