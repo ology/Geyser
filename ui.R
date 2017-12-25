@@ -31,7 +31,8 @@ shinyUI(
 
             mainPanel(
                 plotOutput('eruption_plot'),
-                plotOutput('succession_plot')
+                plotOutput('succession_plot'),
+                plotOutput('waiting_plot')
             )
         )
     )
