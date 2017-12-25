@@ -1,5 +1,7 @@
 library(shiny)
 
+total <- length(faithful$eruptions)
+
 shinyUI(
     fluidPage(
 
@@ -14,7 +16,13 @@ shinyUI(
                     selected = 'p'
                 ),
                 checkboxInput('arrow_toggle', 'Show arrows', FALSE),
-                sliderInput('sample_size', 'Sample size:', min = 10, max = 272, value = 272)
+                sliderInput(
+                    'sample_size',
+                    'Sample size:',
+                    min = 10,
+                    max = total,
+                    value = total
+                )
             ),
 
             mainPanel(
