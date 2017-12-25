@@ -9,8 +9,8 @@ shinyServer(
 
             plot(
                 x, y,
-                xlab = 'Previous Duration',
-                ylab = 'Next Duration',
+                xlab = 'Eruption Magnitude',
+                ylab = 'Following Eruption Magnitude',
                 main = 'Succession Plot',
                 type = input$graph_type
             )
