@@ -11,7 +11,7 @@ shinyServer(
                 x, y,
                 xlab = 'Wait Time',
                 ylab = 'Following Wait Time',
-                main = 'Succession Plot',
+                main = 'Wait Time Succession Plot',
                 type = input$graph_type
             )
 
@@ -36,7 +36,7 @@ shinyServer(
                 x, y,
                 xlab = 'Eruption Magnitude',
                 ylab = 'Following Eruption Magnitude',
-                main = 'Succession Plot',
+                main = 'Magnitude Succession Plot',
                 type = input$graph_type
             )
 
