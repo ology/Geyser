@@ -18,15 +18,15 @@ shinyUI(
 #                    selected = 'p'
 #                ),
 
-                checkboxInput( 'arrow_toggle', 'Show arrows', FALSE ),
-
                 sliderInput(
                     'sample_size',
                     'Sample size:',
                     min = 10,
                     max = total,
                     value = total
-                )
+                ),
+
+                checkboxInput( 'arrow_toggle', 'Show arrows', FALSE )
 
             ),
 
